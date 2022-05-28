@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Skala Hotel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+
+
+  <header class="header" id="header">
+    <div class="head-top">
+      <div class="site-name">
+        <span>SKALA HOTEL</span>
+      </div>
+      <div class="site-nav">
+        <span id="nav-btn">MENU <i class="fas fa-bars"></i></span>
+      </div>
+    </div>
+
+    <div class="head-bottom flex">
+      <h2>O melhor lugar para se hospedar em Vila Velha</h2>
+      <p id="texto">O lugar perfeito para passar os dias, seja em família ou á trabalho, te entregamos o maior e melhor
+        conforto já visto antes, além das melhores comidas preparadas pelo nosso chef italiano.</p>
+      <button type="button" class="head-btn">Vamos lá</button>
+    </div>
+  </header>
+
+
+
+  <div class="sidenav" id="sidenav">
+    <span class="cancel-btn" id="cancel-btn">
+      <i class="fas fa-times"></i>
+    </span>
+
+    <ul class="navbar">
+      <li><a href="#header">Página inicial</a></li>
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#rooms">Quartos</a></li>
+      <li><a href="#customers">Clientes</a></li>
+    </ul>
+    <button class="btn sign-up">Cadastre-se</button>
+    <button class="btn log-in">Entrar</button>
+  </div>
+
+
+
+  <div id="modal"></div>
+
+
+
+  <section class="services sec-width" id="services">
+    <div class="title">
+      <h2>Serviços</h2>
+    </div>
+    <div class="services-container">
+
+      <article class="service">
+        <div class="service-icon">
+          <span>
+            <i class="fas fa-utensils"></i>
+          </span>
+        </div>
+        <div class="service-content">
+          <h2>Alimentação e Cardápio</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia accusamus
+            asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur doloremque ut illo similique
+            voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis rem autem ex, reiciendis corporis
+            suscipit!</p>
+          <button type="button" class="btn">Saiba Mais</button>
+        </div>
+      </article>
+
+      <article class="service">
+        <div class="service-icon">
+          <span>
+            <i class="fas fa-swimming-pool"></i>
+          </span>
+        </div>
+        <div class="service-content">
+          <h2>Repouso e Lazer</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia accusamus
+            asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur doloremque ut illo similique
+            voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis rem autem ex, reiciendis corporis
+            suscipit!</p>
+          <button type="button" class="btn">Saiba Mais</button>
+        </div>
+      </article>
+
+      <article class="service">
+        <div class="service-icon">
+          <span>
+            <i class="fas fa-broom"></i>
+          </span>
+        </div>
+        <div class="service-content">
+          <h2>Serviço de Limpeza</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia accusamus
+            asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur doloremque ut illo similique
+            voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis rem autem ex, reiciendis corporis
+            suscipit!</p>
+          <button type="button" class="btn">Saiba Mais</button>
+        </div>
+      </article>
+
+      <article class="service">
+        <div class="service-icon">
+          <span>
+            <i class="fas fa-door-closed"></i>
+          </span>
+        </div>
+        <div class="service-content">
+          <h2>Segurança dos quartos</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia accusamus
+            asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur doloremque ut illo similique
+            voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis rem autem ex, reiciendis corporis
+            suscipit!</p>
+          <button type="button" class="btn">Saiba Mais</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="book">
+    <form class="book-form">
+      <div class="form-item">
+        <label for="checkin-date">Data de entrada: </label>
+        <input type="date" id="chekin-date">
+      </div>
+      <div class="form-item">
+        <label for="checkout-date">Data de saída: </label>
+        <input type="date" id="chekout-date">
+      </div>
+      <div class="form-item">
+        <label for="adult">Adultos: </label>
+        <input type="number" min="1" value="1" id="adult">
+      </div>
+      <div class="form-item">
+        <label for="children">Crianças: </label>
+        <input type="number" min="0" value="0" id="children">
+      </div>
+      <div class="form-item">
+        <label for="rooms">Quartos: </label>
+        <input type="number" min="1" value="1" id="rooms">
+      </div>
+      <div class="form-item">
+        <input type="submit" class="btn" value="Reserve Agora">
+      </div>
+    </form>
+  </div>
+
+  <section class="rooms sec-width" id="quartos">
+    <div class="title">
+      <h2>Quartos</h2>
+    </div>
+    <div class="rooms-container">
+
+      <article class="room">
+        <div class="room-image">
+          <img src="images/img1.jpg" alt="room image">
+        </div>
+        <div class="room-text">
+          <h3>Quartos de Classe A</h3>
+          <ul>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>
+              Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>
+              Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>
+              Lorem ipsum dolor sit amet.
+            </li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus maxime ullam
+            tempore architecto provident unde expedita quam beatae, dolore eligendi molestias sint tenetur incidunt
+            voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse commodi nemo?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque, fugiat
+            nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit eius labore, atque
+            quo?</p>
+          <p class="rate">
+            <span>R$100.00 /</span> Por Noite
+          </p>
+          <button type="button" class="btn">Reserve agora</button>
+        </div>
+      </article>
+
+      <article class="room">
+        <div class="room-image">
+          <img src="images/img2.jpg" alt="room image">
+        </div>
+        <div class="room-text">
+          <h3>Quartos de Luxo</h3>
+          <ul>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>
+              Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>
+              Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>
+              Lorem ipsum dolor sit amet.
+            </li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus maxime ullam
+            tempore architecto provident unde expedita quam beatae, dolore eligendi molestias sint tenetur incidunt
+            voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse commodi nemo?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque, fugiat
+            nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit eius labore, atque
+            quo?</p>
+          <p class="rate">
+            <span>R$300.00 /</span> Por Noite
+          </p>
+          <button type="button" class="btn">Reserve agora</button>
+        </div>
+      </article>
+
+      <article class="room">
+        <div class="room-image">
+          <img src="images/img3.jpg" alt="room image">
+        </div>
+        <div class="room-text">
+          <h3>Quartos Simples</h3>
+          <ul>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>
+              Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>
+              Lorem ipsum dolor sit amet.
+            </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>
+              Lorem ipsum dolor sit amet.
+            </li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus maxime ullam
+            tempore architecto provident unde expedita quam beatae, dolore eligendi molestias sint tenetur incidunt
+            voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse commodi nemo?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque, fugiat
+            nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit eius labore, atque
+            quo?</p>
+          <p class="rate">
+            <span>R$50.00 /</span> Por Noite
+          </p>
+          <button type="button" class="btn">Reserve agora</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <section class="customers" id="customers">
+    <div class="sec-width">
+      <div class="title">
+        <h2>Opinião dos Clientes</h2>
+      </div>
+      <div class="customers-container">
+
+        <div class="customer">
+          <div class="rating">
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="far fa-star"></i></span>
+          </div>
+          <h3>Nós Amamos a nossa estadia!</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident eveniet
+            praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+          <img src="images/cus1.jpg" alt="customer image">
+          <span>Neide e Roger, Amazonas</span>
+        </div>
+
+        <div class="customer">
+          <div class="rating">
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="far fa-star"></i></span>
+          </div>
+          <h3>Quartos muito confortáveis.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident eveniet
+            praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+          <img src="images/cus2.jpg" alt="customer image">
+          <span>Gilberto, Pará</span>
+        </div>
+
+        <div class="customer">
+          <div class="rating">
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="far fa-star"></i></span>
+          </div>
+          <h3>Bem localizado!</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident eveniet
+            praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+          <img src="images/cus3.jpg" alt="customer image">
+          <span>Frederico, Cuiabá</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <h2>Sobre nós </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente mollitia doloribus provident? Eos
+          quisquam aliquid vel dolorum, impedit culpa.</p>
+        <ul class="social-icons">
+          <li class="flex">
+            <i class="fa fa-twitter fa-2x"></i>
+          </li>
+          <li class="flex">
+            <i class="fa fa-facebook fa-2x"></i>
+          </li>
+          <li class="flex">
+            <i class="fa fa-instagram fa-2x"></i>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Skala Hotel</h2>
+        <a href="#">Blog</a>
+        <a href="#">Quartos</a>
+        <a href="#">Reservas</a>
+        <a href="#">Lembrancinhas</a>
+      </div>
+
+      <div>
+        <h2>Trabalhe conosco</h2>
+        <a href="#">Carreira</a>
+        <a href="#">Sobre nós</a>
+        <a href="#">Entre em contato</a>
+        <a href="#">Serviços</a>
+      </div>
+
+      <div>
+        <h2>Endereço</h2>
+        <div class="contact-item">
+          <span>
+            <i class="fas fa-map-marker-alt"></i>
+          </span>
+          <span>
+            Rua dos bobos 0, Praia da Costa, Vila Velha, Brasil
+          </span>
+        </div>
+        <div class="contact-item">
+          <span>
+            <i class="fas fa-phone-alt"></i>
+          </span>
+          <span>
+            +55 (027) 99991-1234
+          </span>
+        </div>
+        <div class="contact-item">
+          <span>
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>
+            skalahotel@gmailfalso.com
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
